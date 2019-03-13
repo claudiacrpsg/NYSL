@@ -1,0 +1,67 @@
+body {
+  font-family: Comic Sans MS;
+}
+
+/*Banner*/
+.banner {
+  position: relative;
+  background-image: url("design1_image1.jpg");
+  height: 220px;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.title {
+  position: relative;
+  top: 20px;
+  left: 16px;
+  color: aliceblue;
+}
+
+.logo {
+  right: 10px;
+  top: 165px;
+  position: absolute;
+}
+
+img {
+  width: 40%;
+}
+
+/*Page title*/
+h2 {
+  color: aliceblue;
+  text-align: center;
+  background-color: brown;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+/*Navigation bar*/
+nav {
+  float: left;
+  margin: 0 1.5%;
+  width: 150px;
+  line-height: 3;
+}
+
+/*Page content*/
+.content {
+  float: right;
+  margin: 0 1.5%;
+  width: 70%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.indent {
+  text-indent: 40px;
+}
+
+.content p {
+  margin-left: 20px;
+}
+
+
