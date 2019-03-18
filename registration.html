@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>NYSL Registration Form</title>
   <link rel="stylesheet" type="text/css" href="Styles/nysl_3.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"><!--Font-->
-    <link rel="shortcut icon" type="image/x-icon" href="Images/football.png">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"><!--Icons-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <!--Font-->
+  <link rel="shortcut icon" type="image/x-icon" href="Styles/football.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <!--Icons-->
 </head>
+
 <body>
   <div class="flex-content">
-<!--Banner with Main title and Logo-->
+    <!--Banner with Main title and Logo-->
     <div class="banner">
       <div>
         <h1 class="title">Northside Youth Soccer League</h1>
       </div>
       <div class="logo">
-        <img src="Images/nysl_logo.png" alt="NYSL logo">
+        <img src="Styles/nysl_logo.png" alt="NYSL logo">
       </div>
     </div>
-<!--Page title and Navigation bar-->
+    <!--Page title and Navigation bar-->
     <div class="pagetitle_nav">
       <h2>Registration Form</h2>
       <div class="nav">
@@ -31,9 +36,9 @@
         <a href="contactNYSL.html">Contact</a>
       </div>
     </div>
-<!--Forms-->
+    <!--Forms-->
     <form action="show_data.html" method="get">
-<!--Personal data forms-->
+      <!--Personal data forms-->
       <div>
         <fieldset class="field_personal">
           <legend class="bold">Personal data <i class="far fa-id-card"></i></legend>
@@ -52,8 +57,8 @@
             <div>
               <label for="birth_date">Birth Date:</label><input type="date" name="birth_date" required>
               <label for="gender">Gender:</label>
-                <input type="radio" name="gender" value="male">Male
-                <input type="radio" name="gender" value="female">Female
+              <input type="radio" name="gender" value="male">Male
+              <input type="radio" name="gender" value="female">Female
             </div>
             <div>
               <label for="grade">Grade:</label>
@@ -69,46 +74,47 @@
             </div>
             <div class="contact">
               <label for="phone">Contact Phone:</label><input type="tel" name="phone" required>
-              <label for="email">Contact Email:</label><input type="email" name="email" placeholder="example@domain.com" required>
+              <label for="email">Contact Email:</label><input type="email" name="email" placeholder="example@domain.com"
+                required>
             </div>
           </div>
         </fieldset>
       </div>
-<!--Close schools forms-->
+      <!--Close schools forms-->
       <div>
         <fieldset class="field_schools">
           <legend class="bold">Which elementary schools do you live near? <i class="fas fa-school"></i></legend>
-            <div class="schools">
-              <div>
-                <div class="margin_schools">First Closest School:</div>
-                  <div><select name="first_school">
-                    <option value="empty">Pick a school</option>
-                    <option value="katzenmaier">AJ Katzenmaier</option>
-                    <option value="greenbay">Greenbay</option>
-                    <option value="howard">Howard A Yeager</option>
-                    <option value="marjorie">Marjorie P Hart</option>
-                    <option value="north">North Elementary</option>
-                    <option value="south">South Elementary</option>
-                    </select>
-                  </div>
-              </div>
-              <div>
-                <div class="margin_schools">Second Closest School:</div>
-                  <div><select name="second_school">
-                    <option value="empty">Pick a school</option>
-                    <option value="katzenmaier">AJ Katzenmaier</option>
-                    <option value="greenbay">Greenbay</option>
-                    <option value="howard">Howard A Yeager</option>
-                    <option value="marjorie">Marjorie P Hart</option>
-                    <option value="north">North Elementary</option>
-                    <option value="south">South Elementary</option>
-                    </select>
-                  </div>
+          <div class="schools">
+            <div>
+              <div class="margin_schools">First Closest School:</div>
+              <div><select name="first_school">
+                  <option value="empty">Pick a school</option>
+                  <option value="katzenmaier">AJ Katzenmaier</option>
+                  <option value="greenbay">Greenbay</option>
+                  <option value="howard">Howard A Yeager</option>
+                  <option value="marjorie">Marjorie P Hart</option>
+                  <option value="north">North Elementary</option>
+                  <option value="south">South Elementary</option>
+                </select>
               </div>
             </div>
+            <div>
+              <div class="margin_schools">Second Closest School:</div>
+              <div><select name="second_school">
+                  <option value="empty">Pick a school</option>
+                  <option value="katzenmaier">AJ Katzenmaier</option>
+                  <option value="greenbay">Greenbay</option>
+                  <option value="howard">Howard A Yeager</option>
+                  <option value="marjorie">Marjorie P Hart</option>
+                  <option value="north">North Elementary</option>
+                  <option value="south">South Elementary</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </fieldset>
       </div>
-<!--Positions played forms-->
+      <!--Positions played forms-->
       <div class="position">
         <div>
           <fieldset class="field_position">
@@ -129,71 +135,80 @@
           </fieldset>
         </div>
       </div>
-<!--Uniform form-->
-      <fieldset  class="field_uniform">
+      <!--Uniform form-->
+      <fieldset class="field_uniform">
         <legend class="bold">Uniform <i class="fas fa-user-tie"></i></legend>
         <div><input type="checkbox" name="uniform" value="yes"><label for="uniform">Already Have a Uniform</label></div>
       </fieldset>
-<!--Sizes form-->
+      <!--Sizes form-->
       <div class="jerseyshort">
         <div>
           <fieldset class="field_size">
             <legend class="bold">Jersey Size <i class="fas fa-tshirt"></i></legend>
-              <div class="size">
-                <div class="margin">
-                  <div><input type="radio" name="jersey_size" value="youthsmall"><label>Youth Small</label></div>
-                  <div><input type="radio" name="jersey_size" value="youthmedium"><label>Youth Medium</label></div>
-                  <div><input type="radio" name="jersey_size" value="youthlarge"><label>Youth Large</label></div>
-                  <div><input type="radio" name="jersey_size" value="small"><label>Small</label></div>
-                </div>
-                <div>
-                  <div><input type="radio" name="jersey_size" value="medium"><label>Medium</label></div>
-                  <div><input type="radio" name="jersey_size" value="large"><label>Large</label></div>
-                  <div><input type="radio" name="jersey_size" value="extralarge"><label>Extra-large</label></div>
-                </div>
+            <div class="size">
+              <div class="margin">
+                <div><input type="radio" name="jersey_size" value="youthsmall"><label>Youth Small</label></div>
+                <div><input type="radio" name="jersey_size" value="youthmedium"><label>Youth Medium</label></div>
+                <div><input type="radio" name="jersey_size" value="youthlarge"><label>Youth Large</label></div>
+                <div><input type="radio" name="jersey_size" value="small"><label>Small</label></div>
               </div>
+              <div>
+                <div><input type="radio" name="jersey_size" value="medium"><label>Medium</label></div>
+                <div><input type="radio" name="jersey_size" value="large"><label>Large</label></div>
+                <div><input type="radio" name="jersey_size" value="extralarge"><label>Extra-large</label></div>
+              </div>
+            </div>
           </fieldset>
         </div>
         <div>
           <fieldset class="field_size">
             <legend class="bold">Shorts Size <i class="fas fa-columns"></i></legend>
-              <div class="size">
-                <div class="margin">
-                  <div><input type="radio" name="shorts_size" value="youthsmall"><label>Youth Small</label></div>
-                  <div><input type="radio" name="shorts_size" value="youthmedium"><label>Youth Medium</label></div>
-                  <div><input type="radio" name="shorts_size" value="youthlarge"><label>Youth Large</label></div>
-                  <div><input type="radio" name="shorts_size" value="small"><label>Small</label></div>
-                </div>
-                <div>
-                  <div><input type="radio" name="shorts_size" value="medium"><label>Medium</label></div>
-                  <div><input type="radio" name="shorts_size" value="large"><label>Large</label></div>
-                  <div><input type="radio" name="shorts_size" value="extralarge"><label>Extra-large</label></div>
-                </div>
+            <div class="size">
+              <div class="margin">
+                <div><input type="radio" name="shorts_size" value="youthsmall"><label>Youth Small</label></div>
+                <div><input type="radio" name="shorts_size" value="youthmedium"><label>Youth Medium</label></div>
+                <div><input type="radio" name="shorts_size" value="youthlarge"><label>Youth Large</label></div>
+                <div><input type="radio" name="shorts_size" value="small"><label>Small</label></div>
               </div>
+              <div>
+                <div><input type="radio" name="shorts_size" value="medium"><label>Medium</label></div>
+                <div><input type="radio" name="shorts_size" value="large"><label>Large</label></div>
+                <div><input type="radio" name="shorts_size" value="extralarge"><label>Extra-large</label></div>
+              </div>
+            </div>
           </fieldset>
         </div>
       </div>
-<!--Permission form-->
+      <!--Permission form-->
       <fieldset class="field_permission">
         <legend class="bold">Permission to play <i class="fas fa-pen-fancy"></i></legend>
-          <div class="permission">
-            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p>
-            <p>By entering your name bellow, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
-            <div class="signature">
-              <div class="sign"><label for="parent_signature">Parent/Guardian Signature:</label><input type="text" name="parent_signature" required></div>
-              <div class="date"><label for="date">Date:</label>
+        <div class="permission">
+          <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
+            rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury
+            associated with soccer and in consideration for the “League” accepting the registrant for its soccer
+            programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and
+            associated personnel and volunteers, including the facilities used for practices and games, against any
+            claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or
+            being transported to or from NYSL sponsored activities, which transportation.</p>
+          <p>By entering your name bellow, I hereby agree and authorize the above. In addition, by signing below, I
+            also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+          <div class="signature">
+            <div class="sign"><label for="parent_signature">Parent/Guardian Signature:</label><input type="text" name="parent_signature"
+                required></div>
+            <div class="date"><label for="date">Date:</label>
               <input type="date" name="signature_date" required></div>
-            </div>
           </div>
+        </div>
       </fieldset>
-<!--Submit button-->
+      <!--Submit button-->
       <div class="submit">
         <input type="submit" value="Submit">
       </div>
     </form>
-<!--Empty div for bottom image-->
+    <!--Empty div for bottom image-->
     <div class="bottom">
     </div>
   </div>
 </body>
+
 </html>
